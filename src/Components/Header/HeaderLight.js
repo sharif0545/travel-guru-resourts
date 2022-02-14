@@ -4,10 +4,10 @@ import { Form, FormControl, Nav, Navbar } from "react-bootstrap";
 import { UserContext } from "../../App";
 import logo_white from "../images/logo/logo-white.png";
 import LogOut from "../LogOut/LogOut";
-import "./HeaderLight.css";
 
 const HeaderLight = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
   return (
     <div className="navigation">
       <Navbar collapseOnSelect expand="lg">

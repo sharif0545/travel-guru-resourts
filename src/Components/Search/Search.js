@@ -16,7 +16,6 @@ const Search = () => {
   useEffect(() => {
     setHotels(HotelData);
   }, []);
-  console.log(booking);
 
   return (
     <div>

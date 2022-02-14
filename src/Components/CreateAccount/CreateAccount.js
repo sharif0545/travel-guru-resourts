@@ -20,8 +20,8 @@ const CreateAccount = () => {
     success: false,
   });
   const history = useHistory();
-  const location = useLocation();
-  let { from } = location.state || { from: { pathname: "/booking" } };
+  // const location = useLocation();
+  // let { from } = location.state || { from: { pathname: "/booking" } };
 
   const handleBlur = (e) => {
     let isFormValid = true;
@@ -53,11 +53,8 @@ const CreateAccount = () => {
           newUserInfo.error = "";
           newUserInfo.success = true;
           setUser(newUserInfo);
-          updateUserName(user.name);
           setLoggedInUser(newUserInfo);
-          //   console.log(res);
-          //      console.log(res.user.displayName);
-          history.replace(from);
+          history.push("/login");
         })
         .catch((error) => {
           const newUserInfo = { ...user };
@@ -77,8 +74,7 @@ const CreateAccount = () => {
           newUserInfo.error = "";
           setUser(newUserInfo);
           setLoggedInUser(newUserInfo);
-
-          console.log(user);
+          updateUserName(user.name);
           history.push("/login");
         })
         .catch((error) => {
@@ -102,12 +98,13 @@ const CreateAccount = () => {
         displayName: name,
       })
       .then(() => {
-        console.log("User name updated successfully");
+        // console.log("User name updated successfully");
       })
       .catch((error) => {
         console.log(error.message);
       });
   };
+
   return (
     <>
       <Container>
@@ -134,7 +131,6 @@ const CreateAccount = () => {
                   placeholder="Your name"
                   onBlur={handleBlur}
                 />
-                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
 
               <Form.Group
@@ -175,9 +171,6 @@ const CreateAccount = () => {
                     Password should be in 6 characters with at least one numeric
                     digit.
                   </span>
-                  {/* <Form.Control.Feedback type="invalid">
-                  Please give password.
-                </Form.Control.Feedback> */}
                 </Form.Group>
 
                 <Form.Group as={Col} md="6" controlId="validationCustom05">

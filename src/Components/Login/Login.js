@@ -64,7 +64,6 @@ const Login = () => {
           // newUserInfo.success = true;
           setUser(signedInUser);
           setLoggedInUser(signedInUser);
-          console.log(displayName);
           history.replace(from);
         })
         .catch((error) => {
@@ -92,7 +91,7 @@ const Login = () => {
         <HeaderDark></HeaderDark>
         {loggedInUser.email && (
           <h5
-            style={{ textAlign: "center", fontWeight: "600", color: "green" }}
+            style={{ textAlign: "center", fontWeight: "500", color: "green" }}
           >
             Hello <span style={{ color: "lime" }}>{loggedInUser.name}</span> ,
             Your account created successfully!

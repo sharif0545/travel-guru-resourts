@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BackGround from "../BackGround/BackGround";
 import HeaderLight from "../Header/HeaderLight";
-import slideShow from "../Slideshow/slideShow";
+import SlideShow from "../SlideShow/SlideShow";
 import "./Home.css";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
             <BackGround></BackGround>
 
             <Col xs={12} md={8}>
-              {/* <slideShow></slideShow> */}
+              {/* <SlideShow></SlideShow> */}
               <div className="destination-content">
                 <Row>
                   <Col md={4}>

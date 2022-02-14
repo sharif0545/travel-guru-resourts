@@ -24,7 +24,6 @@ const GoogleSignIn = () => {
       .signInWithPopup(googleProvider)
       .then((result) => {
         const { displayName, email } = result.user;
-        // console.log(displayName, email);
         const signedInUser = {
           isSignedIn: true,
           name: displayName,
