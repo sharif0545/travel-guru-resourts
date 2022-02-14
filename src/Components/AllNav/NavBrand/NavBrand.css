@@ -1,0 +1,19 @@
+.logo-dark{
+    width:30%
+}
+@media only screen and (max-width:1200px) {
+    .logo-dark{
+        width:50%
+    }
+  }
+  @media only screen and (max-width:992px) {
+    .logo-dark{
+        width:20%
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .logo-dark{
+        width:25%
+    }
+  }
+  

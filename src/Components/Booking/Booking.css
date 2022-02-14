@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.home-main{
+    background-image:url("../images/home/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+}
+.coxbazar-heading{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #ffffff;
+}
+.coxbazar-text{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.booking-section {
+	margin: 100px 0;
+	padding: 100px 0;
+}
+.booking-content{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+.booking-content input[type="text"]{
+    width:100%;
+    padding:10px;
+    background-color:#ECF0F1;
+    border-radius:5px;
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+.booking-content input[type="date"]{
+    background-color:#ECF0F1;
+    border: none;
+    font-weight: 700;
+}
+
+.date-picker{
+    display: flex;
+}
+.date-picker img {
+	width: 25%;
+	margin-left: 60px;
+}
+.date-from-style, .date-to-style{
+    padding:3px;
+    background-color:#ECF0F1; 
+    border-radius:5px;
+}
+.date-from, .date-to{
+    width: 48%;
+}
+.date-to{
+    margin-left: 20px;
+}
+.form-single{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,53 @@
+.search-img{
+    width:24rem;
+    margin: 1rem;
+}
+.hotel-des{
+    width: 24rem;
+    border: none;
+    padding: 1rem;
+}
+
+.star-img{
+    width:13%;
+}
+@media only screen and (max-width:1400px){
+    .search-img{
+        width:22rem;
+           }
+    .hotel-des{
+        width: 22rem;
+        padding: 0;
+         }
+}
+@media only screen and (max-width:1200px){
+    .search-img{
+        width:18rem;
+           }
+           .hotel-des {
+            width: 18rem;
+            line-height: 15px;
+        }
+}
+@media only screen and (max-width:992px){
+    .search-img{
+        width:20rem;
+        }
+        .hotel-des {
+            width: 30rem;
+            line-height: normal;
+        }
+}
+@media only screen and (max-width:768px){
+    .search-img {
+        width: 22rem;
+        margin: 0 15%;
+    }
+    .hotel-des {
+        width: 22rem;
+        margin: 0 15%;  
+    }
+    .star-img{
+        width:15%;
+    }
+}

@@ -1,0 +1,36 @@
+const HotelData = [
+  {
+    categoryID: 1001,
+    category: "Exclusive",
+    outlook: "Light bright airy stylish apt & safe peaceful stay",
+    facilities: "Wifi & Air conditioning kitchen",
+    cost: "$52/night",
+    rooms: "6 guests 3 bedrooms 3 beds 3 baths",
+    flexibility: "Cancellation flexibility available",
+    review: "4.9(20)",
+    image: "https://i.ibb.co/hgRWYmY/bed.png",
+  },
+  {
+    categoryID: 1002,
+    category: "Medium",
+    outlook: "Apartment in Lost Panorama",
+    facilities: "Wifi & Air conditioning kitchen",
+    cost: "$44/night",
+    rooms: "4 guests 2 bedrooms 2 beds 2 baths",
+    flexibility: "Cancellation flexibility available",
+    review: "4.8(10)",
+    image: "https://i.ibb.co/4JC4frG/flat.png",
+  },
+  {
+    categoryID: 1003,
+    category: "Economy",
+    outlook: "AR Longue & Pool (r&r + b&b)",
+    facilities: "Wifi & Air conditioning kitchen",
+    cost: "$34/night",
+    rooms: "2 guests 1 bedrooms 1 beds 1 baths",
+    flexibility: "Cancellation flexibility available",
+    review: "4.9(25)",
+    image: "https://i.ibb.co/YfYjTGC/longue.png",
+  },
+];
+export default HotelData;
