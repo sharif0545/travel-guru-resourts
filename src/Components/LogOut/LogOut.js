@@ -11,7 +11,7 @@ const LogOut = () => {
     history.replace("/home");
   };
   return (
-    <Button className="logout btn-warning" onClick={handleLogOut}>
+    <Button className="btn-warning" onClick={handleLogOut}>
       Logout
     </Button>
   );
